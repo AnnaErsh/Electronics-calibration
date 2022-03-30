@@ -91,8 +91,7 @@ results/
 
 In the `txt` folder contains the list of names of all txt files in this folder `file_names.txt` (needed for the code that prints final results) and `.txt` files with the name of corresponding the root file. These files contain slope, intercept, x and y coordinates of the calibration signal.
 
-```
-!!! note "Example"
+>   "Example"
     h_1_7 -9.82779 163.686 1 7
     h_1_15 -1.07458 164.187 1 15
     h_7_19 -9.43648 165.307 7 19
@@ -108,8 +107,7 @@ In the `txt` folder contains the list of names of all txt files in this folder `
     h_28_4 -11.2452 162.291 28 4
     h_28_12 7.57043 163.039 28 12
     h_34_16 0.4478 157.718 34 16
-    h_34_24 -6.80059 162.099 34 24
-```
+
 > This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
 consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
 Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
