@@ -107,3 +107,5 @@ The `histograms` folder contains contains signal maps for each processed file (s
 
 >If you want to change style of the output histograms, go to `src/Style.h`.
 
+The final results of the superimposed calibration lines and maps of slope and intercept are directly in the `histograms` folder.
+
