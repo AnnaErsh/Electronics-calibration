@@ -110,3 +110,16 @@ In the `txt` folder contains the list of names of all txt files in this folder `
     h_34_24 -6.80059 162.099 34 24
 
 
+!!! Example
+    Let `/some/path/my_params.txt` be you base configuration.
+    The following bash script:
+    
+        #!/bin/sh
+        for Ma in $(seq 1000 100 1300)
+        do
+            nuwro -i /some/path/my_params.txt \
+                  -o my_output_$Ma.root \
+                  -p "qel_cc_axial_mass = $Ma"
+        done
+        
+    will perform 4 simulations with the same settings but axial mass.
