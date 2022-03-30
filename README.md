@@ -10,8 +10,7 @@ for one pad.</b></figcaption>
 </p>
 </figure>
 
-
-The algorithm goes trough each pad and finds if there is a calibration signal (yellow pads on the left picture, the calibration signal is shown on the right picture). In the pad with signal, the algorithm identifies each peak. We demand at least ten empty bins between the peaks and at least 100 events in the peak (this can be changed in config file, but I do not recommend to do it).The pedestal equal 250 is removed. Data after 3800 are not processed to remove the saturation peak. Each of the peaks is fitted with Gaussian distribution. Then, we plot the mean of each Gaussian distribution dependence on the number of peaks.
+The algorithm goes through each pad and finds if there is a calibration signal (yellow pads on the left picture, the calibration signal is shown on the right picture). In the pad with signal, the algorithm identifies each peak. We demand at least ten empty bins between the peaks and at least 100 events in the peak (this can be changed in the config file, but I do not recommend doing it). The pedestal equal to 250 is removed. Data after 3800 are not processed to remove the saturation peak. Each of the peaks is fitted with Gaussian distribution. Then, we plot the mean of each Gaussian distribution dependence on the number of peaks.
 
 <figure>
 <p align="center">
@@ -20,7 +19,7 @@ The algorithm goes trough each pad and finds if there is a calibration signal (y
 </p>
 </figure>
 
-After all files are processed, the code will plot all calibration lines superimposed, histogram of the slope distribution and map of slopes and intersepts.
+After all files are processed, the code will plot all calibration lines superimposed, histogram of the slope distribution, and map of slopes and intercepts.
 
 <figure>
 <p align="center">
@@ -38,18 +37,18 @@ Download the code:
 ```bash
 git clone https://github.com/AnnaErsh/Electronics-calibration.git
 ```
-Make sure `run.sh` file has execution rights. In the `run.sh`, change `$installdir` variable to the location of this code, and `$file_path` variable to the location of the data that will be analyzed.
+Make sure the `run.sh` file has execution rights. In the `run.sh`, change `$installdir` variable to the location of this code, and `$file_path` variable to the location of the data that will be analyzed.
 
-The algorithm needs some information about the input data in order to identify pad with the signal and the calibration peaks correctly. 
+The algorithm needs some information about the input data to correctly identify the pad with the signal and the calibration peaks. 
 
 ### Parameters
 
 | Parameter name | Possible arguments | Default value | Description |
 |:--------------:|:------------------:|:-------------:|:-----------:|
 | NPeaks | positive integer | 25 | The number of calibration peaks |
-| MinNEvents | positive integer | 100 | The minimum number of events inside the peak, required for its identification (use carefully) |
+| MinNEvents | positive integer | 100 | The minimum number of events inside the peak required for its identification (use carefully) |
 | MinNBins | positive integer | 10 | The minimum required number of empty bins between two peaks (use carefully)|
-| NEvents | positive integer | 23990 | Number of events in the signal (actually, a bit less. Used to identify pad with the signal)|
+| NEvents | positive integer | 23990 | The number of events in the signal (actually, a bit less. Used to identify pad with the signal)|
 | ifPlotPeaks | bool| false | Flag if each calibration peak with its fit will be plotted separately|
 | ext | string| pdf | Format of the produced plots|
 
@@ -57,7 +56,7 @@ After setting all parameters to proper values, run the `run.sh` script.
 
 ## Results
 
-The `run.sh` will create the tree of the directories with results, loop over data files to perform the calibration and plot the final figures.
+The `run.sh` will create the tree of the directories with results, loop over data files to perform the calibration, and plot the final figures.
 
 Here is the file structure of the results:
 ```
@@ -103,11 +102,11 @@ h_7_19 -9.43648 165.307 7 19 \
 h_7_27 0.75974 162.029 7 27 \
 ...
 
-The `histograms` folder contains contains signal maps for each processed file (subfolder `ampl`, first figure on this page), calibration peaks (subfolder `peaks`, second figure), calibration lines (subfolder `lines`, third figure) and histograms of each found and fitted peak, if the `ifPlotPeaks` flag was turned on (subfolder `separation`). Each of these subfolders contains a `macros` folder with automatically generated ROOT macroses of all these plots.
+The `histograms` folder contains signal maps for each processed file (subfolder `ampl`, first figure on this page), calibration peaks (subfolder `peaks`, second figure), calibration lines (subfolder `lines`, third figure), and histograms of each found and fitted peak, if the `ifPlotPeaks` flag was turned on (subfolder `separation`). Each of these subfolders contains a `macros` folder with automatically generated ROOT macros of all these plots.
 
-> The peaks histogram will not always look as nice as on the example. Sometimes there will be the saturation peak.
+> The peaks histogram will not always look as nice as the example. Sometimes there will be a saturation peak.
 
 The final results of the superimposed calibration lines and maps of slope and intercept are directly in the `histograms` folder.
 
->If you want to change style of the output histograms, go to `src/Style.h`.
+>If you want to change the style of the output histograms, go to `src/Style.h`.
 
