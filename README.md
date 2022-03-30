@@ -24,10 +24,10 @@ After all files are processed, the code will plot all calibration lines superimp
 
 <figure>
 <p align="center">
-<img src="https://user-images.githubusercontent.com/34348134/160835944-17121826-21ae-4c6d-942f-827ba3572688.png" alt="all" width="230"/>
-<img src="https://user-images.githubusercontent.com/34348134/160836146-62650adc-a9cd-4e58-99d8-2195e9ee85a2.png" alt="p13" width="230"/>
-<img src="https://user-images.githubusercontent.com/34348134/160835424-fe749fd3-68a5-4e09-a8d4-24228684d149.png" alt="p0" width="230"/>
-<img src="https://user-images.githubusercontent.com/34348134/160835441-0a608053-4fa2-436a-aa3d-81b1f119aaf0.png" alt="p1" width="230"/>
+<img src="https://user-images.githubusercontent.com/34348134/160835944-17121826-21ae-4c6d-942f-827ba3572688.png" alt="all" width="240"/>
+<img src="https://user-images.githubusercontent.com/34348134/160836146-62650adc-a9cd-4e58-99d8-2195e9ee85a2.png" alt="p13" width="240"/>
+<img src="https://user-images.githubusercontent.com/34348134/160835424-fe749fd3-68a5-4e09-a8d4-24228684d149.png" alt="p0" width="240"/>
+<img src="https://user-images.githubusercontent.com/34348134/160835441-0a608053-4fa2-436a-aa3d-81b1f119aaf0.png" alt="p1" width="240"/>
 <figcaption align = "center"><b>Example of the superimposed calibration lines, slope distribution, map of slopes and map of intersepts.</b></figcaption>
 </p>
 </figure>
