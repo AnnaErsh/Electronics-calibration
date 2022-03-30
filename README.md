@@ -19,3 +19,15 @@ The algorithm goes trough each pad and finds if there is a calibration signal (y
 <figcaption align = "center"><b>Example of the calibration line.</b></figcaption>
 </p>
 </figure>
+
+After all files are processed, the code will plot all calibration lines superimposed, histogram of the slope distribution and map of slopes and intersepts.
+
+<figure>
+<p align="center">
+<img src="https://github.com/AnnaErsh/Electronics-calibration/files/8380443/all_lines3.pdf" alt="all" width="200"/>
+<img src="https://github.com/AnnaErsh/Electronics-calibration/files/8380444/p13.pdf" alt="p13" width="200"/>
+<img src="https://user-images.githubusercontent.com/34348134/160835424-fe749fd3-68a5-4e09-a8d4-24228684d149.png" alt="p0" width="200"/>
+<img src="https://user-images.githubusercontent.com/34348134/160835441-0a608053-4fa2-436a-aa3d-81b1f119aaf0.png" alt="p1" width="200"/>
+<figcaption align = "center"><b>Example of the superimposed calibration lines, slope distribution, map of slopes and map of intersepts.</b></figcaption>
+</p>
+</figure>
