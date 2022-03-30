@@ -81,8 +81,13 @@ results/
 |   |   |   `-- ...
 |   |   |-- h_19_14_R2021_11_26-17_19_58-000.pdf
 |   |   `-- ...
-|   `-- separation
-|       `-- macros
+|   |-- separation
+|   |   `-- macros
+|   |-- all_lines.pdf
+|   |-- p0_display_.pdf
+|   |-- p1_display_.pdf
+|   |-- p1_display_relative_.pdf
+|   `-- p1_superimposed.pdf
 `-- txt
     |-- file_names.txt
     |-- R2021_11_26-15_33_31-000.txt
