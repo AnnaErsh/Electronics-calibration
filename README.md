@@ -38,5 +38,20 @@ Download the code:
 ```bash
 git clone https://github.com/AnnaErsh/Electronics-calibration.git
 ```
-Make sure `run.sh` file has execution rights. In the `run.sh`, change `$installdir` variable to the location of this code, and `$file_path`file_path variable to the location of the data that will be analyzed.
+Make sure `run.sh` file has execution rights. In the `run.sh`, change `$installdir` variable to the location of this code, and `$file_path` variable to the location of the data that will be analyzed.
+
+The algorithm needs some information about the input data in order to identify pad with the signal and the calibration peaks correctly. 
+
+## Parameters
+
+| Parameter name | Possible arguments | Default value | Description |
+|:--------------:|:------------------:|:-------------:|:-----------:|
+| NPeaks | positive integer | 25 | The number of calibration peaks |
+| MinNEvents | positive integer | 100 | The minimum number of events inside the peak, required for its identification (use carefully) |
+| MinNBins | positive integer | 10 | The minimum required number of empty bins between two peaks (use carefully)|
+| NEvents | positive integer | 23990 | Number of events in the signal (actually, a bit less. Used to identify pad with the signal)|
+| ifPlotPeaks | bool| false | Flag if each calibration peak with its fit will be plotted separately|
+| ext | string| pdf | Format of the produced plots|
+
+## Results
 
