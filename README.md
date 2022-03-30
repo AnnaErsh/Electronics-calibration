@@ -38,3 +38,5 @@ Download the code:
 ```bash
 git clone https://github.com/AnnaErsh/Electronics-calibration.git
 ```
+Make sure `run.sh` file has execution rights. In the `run.sh`, change `$installdir` variable to the location of this code, and `$file_path`file_path variable to the location of the data that will be analyzed.
+
