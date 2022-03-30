@@ -13,4 +13,10 @@ for one pad.</b></figcaption>
 
 The algorithm goes trough each pad and finds if there is a calibration signal (yellow pads on the left picture, the calibration signal is shown on the right picture). In the pad with signal, the algorithm identifies each peak. We demand at least ten empty bins between the peaks and at least 100 events in the peak (this can be changed in config file, but I do not recommend to do it).The pedestal equal 250 is removed. Data after 3800 are not processed to remove the saturation peak. Each of the peaks is fitted with Gaussian distribution. Then, we plot the mean of each Gaussian distribution dependence on the number of peaks.
 
-![plot_h_5_4_R2021_11_26-19_19_10-000-1](https://user-images.githubusercontent.com/34348134/160834742-80342905-c549-4655-b028-835aeff86058.png)
+<figure>
+<p align="center">
+<img src="https://user-images.githubusercontent.com/34348134/160834742-80342905-c549-4655-b028-835aeff86058.png" alt="plot" width="800"/>
+<figcaption align = "center"><b>Example of the calibration line
+for one pad.</b></figcaption>
+</p>
+</figure>
