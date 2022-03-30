@@ -98,4 +98,4 @@ h_7_19 -9.43648 165.307 7 19 \
 h_7_27 0.75974 162.029 7 27 \
 ...
 
-The `histograms` folder contains contains signal maps for each processed file (subfolder `ampl`), calibration peaks (subfolder `peaks`), calibration lines (subfolder `lines`) and histograms of each found and fitted peak, if the `ifPlotPeaks` flag was turned on (subfolder `separation`). Each of these subfolders contains a `macros` folder with automatically generated ROOT macroses of all these plots.
+The `histograms` folder contains contains signal maps for each processed file (subfolder `ampl`, first figure on this page), calibration peaks (subfolder `peaks`, second figure), calibration lines (subfolder `lines`, third figure) and histograms of each found and fitted peak, if the `ifPlotPeaks` flag was turned on (subfolder `separation`). Each of these subfolders contains a `macros` folder with automatically generated ROOT macroses of all these plots.
