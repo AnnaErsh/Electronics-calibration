@@ -1,4 +1,4 @@
-# Code to analyse electronics calibration data'
+# Code to analyse electronics calibration data
 
 <figure>
 <p align="center">
@@ -31,4 +31,6 @@ After all files are processed, the code will plot all calibration lines superimp
 <figcaption align = "center"><b>Example of the superimposed calibration lines, slope distribution, map of slopes and map of intersepts.</b></figcaption>
 </p>
 </figure>
+
+## Getting started
 
