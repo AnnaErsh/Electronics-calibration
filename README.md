@@ -15,8 +15,7 @@ The algorithm goes trough each pad and finds if there is a calibration signal (y
 
 <figure>
 <p align="center">
-<img src="https://user-images.githubusercontent.com/34348134/160834742-80342905-c549-4655-b028-835aeff86058.png" alt="plot" width="800"/>
-<figcaption align = "center"><b>Example of the calibration line
-for one pad.</b></figcaption>
+<img src="https://user-images.githubusercontent.com/34348134/160834742-80342905-c549-4655-b028-835aeff86058.png" alt="plot" width="700"/>
+<figcaption align = "center"><b>Example of the calibration line.</b></figcaption>
 </p>
 </figure>
