@@ -59,6 +59,7 @@ After setting all parameters to proper values, run the `run.sh` script.
 
 The `run.sh` will create the tree of the directories with results, loop over data files to perform the calibration and plot the final figures.
 
+```
 results/
 |-- histograms
 |   |-- ampl
@@ -85,5 +86,5 @@ results/
     |-- file_names.txt
     |-- R2021_11_26-15_33_31-000.txt
     `-- ...
-
+```
 
