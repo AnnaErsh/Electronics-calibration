@@ -53,5 +53,37 @@ The algorithm needs some information about the input data in order to identify p
 | ifPlotPeaks | bool| false | Flag if each calibration peak with its fit will be plotted separately|
 | ext | string| pdf | Format of the produced plots|
 
+After setting all parameters to proper values, run the `run.sh` script.
+
 ## Results
+
+The `run.sh` will create the tree of the directories with results, loop over data files to perform the calibration and plot the final figures.
+
+results/
+|-- histograms
+|   |-- ampl
+|   |   |-- macros
+|   |   |   |-- h_ampl_R2021_11_26-15_33_31-000.C
+|   |   |   `-- ...
+|   |   |-- h_ampl_R2021_11_26-15_33_31-000.pdf
+|   |   `-- ...
+|   |-- lines
+|   |   |-- macros
+|   |   |   |-- line_h_9_4_R2021_11_26-16_23_35-000.C
+|   |   |   `-- ...
+|   |   |-- line_h_0_14_R2021_11_26-17_26_14-000.pdf
+|   |   `-- ...
+|   |-- peaks
+|   |   |-- macros
+|   |   |   |-- h_9_4_R2021_11_26-16_23_35-000.C
+|   |   |   `-- ...
+|   |   |-- h_19_14_R2021_11_26-17_19_58-000.pdf
+|   |   `-- ...
+|   `-- separation
+|       `-- macros
+`-- txt
+    |-- file_names.txt
+    |-- R2021_11_26-15_33_31-000.txt
+    `-- ...
+
 
