@@ -42,7 +42,7 @@ Make sure `run.sh` file has execution rights. In the `run.sh`, change `$installd
 
 The algorithm needs some information about the input data in order to identify pad with the signal and the calibration peaks correctly. 
 
-## Parameters
+### Parameters
 
 | Parameter name | Possible arguments | Default value | Description |
 |:--------------:|:------------------:|:-------------:|:-----------:|
