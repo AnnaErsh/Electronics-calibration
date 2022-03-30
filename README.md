@@ -89,7 +89,7 @@ results/
     `-- ...
 ```
 
-In the `txt` folder contains the list of names of all txt files in this folder `file_names.txt` (needed for the code that prints final results) and `.txt` files with the name of corresponding the root file. These files contain slope, intercept, x and y coordinates of the calibration signal.
+The `txt` folder contains the list of names of all txt files in this folder `file_names.txt` (needed for the code that prints final results) and `.txt` files with the name of corresponding the root file. These files contain slope, intercept, x and y coordinates of the calibration signal.
 
 >   Example: \
 h_1_7 -9.82779 163.686 1 7 \
@@ -98,7 +98,4 @@ h_7_19 -9.43648 165.307 7 19 \
 h_7_27 0.75974 162.029 7 27 \
 ...
 
-
-> This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+The `histograms` folder contains contains signal maps for each processed file (subfolder `ampl`), calibration peaks (subfolder `peaks`), calibration lines (subfolder `lines`) and histograms of each found and fitted peak, if the `ifPlotPeaks` flag was turned on (subfolder `separation`). Each of these subfolders contains a `macros` folder with automatically generated ROOT macroses of all these plots.
