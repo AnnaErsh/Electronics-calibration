@@ -105,7 +105,9 @@ h_7_27 0.75974 162.029 7 27 \
 
 The `histograms` folder contains contains signal maps for each processed file (subfolder `ampl`, first figure on this page), calibration peaks (subfolder `peaks`, second figure), calibration lines (subfolder `lines`, third figure) and histograms of each found and fitted peak, if the `ifPlotPeaks` flag was turned on (subfolder `separation`). Each of these subfolders contains a `macros` folder with automatically generated ROOT macroses of all these plots.
 
->If you want to change style of the output histograms, go to `src/Style.h`.
+> The peaks histogram will not always look as nice as on the example. Sometimes there will be the saturation peak.
 
 The final results of the superimposed calibration lines and maps of slope and intercept are directly in the `histograms` folder.
+
+>If you want to change style of the output histograms, go to `src/Style.h`.
 
