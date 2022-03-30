@@ -36,5 +36,5 @@ After all files are processed, the code will plot all calibration lines superimp
 
 Download the code:
 ```bash
-git clone https://github.com/NuWro/nuwro.git
+git clone https://github.com/AnnaErsh/Electronics-calibration.git
 ```
