@@ -1,5 +1,6 @@
 #pragma once
-
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wunused-variable"
 namespace params
 {
   static  int NPeaks      = 25   ;
@@ -9,3 +10,4 @@ namespace params
   static bool ifPlotPeaks = false;
   static  std::string ext = "pdf";
 }
+#pragma GCC diagnostic pop
