@@ -49,6 +49,7 @@ The algorithm needs some information about the input data to correctly identify 
 | MinNEvents | positive integer | 100 | The minimum number of events inside the peak required for its identification (use carefully) |
 | MinNBins | positive integer | 10 | The minimum required number of empty bins between two peaks (use carefully)|
 | NEvents | positive integer | 23990 | The number of events in the signal (actually, a bit less. Used to identify pad with the signal)|
+| Cut | positive integer| 3800 | Satiration peak cut. ADC higher than cut is not processed. (better use default value)|
 | ifPlotPeaks | bool| false | Flag if each calibration peak with its fit will be plotted separately|
 | ext | string| pdf | Format of the produced plots|
 
