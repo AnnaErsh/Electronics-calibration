@@ -7,6 +7,7 @@ namespace params
   static uint MinNEvents  = 100  ;
   static  int MinNBins    = 10   ;
   static  int NEvents     = 23990;
+  static  int Cut         = 3800 ;
   static bool ifPlotPeaks = false;
   static  std::string ext = "pdf";
 }

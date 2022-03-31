@@ -44,6 +44,7 @@ void ReadConfig()
       else if (name == "MinNEvents") params::MinNEvents = std::stoi(value);
       else if (name == "MinNBins")   params::MinNBins   = std::stoi(value);
       else if (name == "NEvents")    params::NEvents    = std::stoi(value);
+      else if (name == "Cut")        params::Cut        = std::stoi(value);
       else if (name == "ifPlotPeaks")params::ifPlotPeaks= std::stoi(value);
       else if (name == "ext")        params::ext        = value;
     }
@@ -57,6 +58,7 @@ void ReadConfig()
   cout << "\nMinNEvents = " << params::MinNEvents;
   cout << "\nMinNBins = " << params::MinNBins;
   cout << "\nNEvents = " << params::NEvents;
+  cout << "\nCut = " << params::Cut;
   cout << "\nifPlotPeaks = " << params::ifPlotPeaks;
   cout << "\next = " << params::ext<<"\n";
   cout << "**********************" << "\n";
@@ -68,7 +70,7 @@ tuple<double, double> histsPlot(TH1I* hist, string file_name, bool ifPlotPeaks =
 	Style();
 	string h_name = hist->GetName();
 	const int N_PEAKS = params::NPeaks;
-	const int TOP_ADC = 3800; 				                   // we do not go higher to remove saturation peak
+	const int TOP_ADC = params::Cut; 				             // we do not go higher to remove saturation peak
 	Double_t x[N_PEAKS], y[N_PEAKS];
 	int n_hists = 0, n_empty_bins = 0;
 	int bin_left = 0, bin_right = 0;
