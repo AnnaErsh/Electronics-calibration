@@ -1,4 +1,4 @@
-# Code to analyse electronics calibration data
+# Code to analyze electronics calibration data
 
 <figure>
 <p align="center">
