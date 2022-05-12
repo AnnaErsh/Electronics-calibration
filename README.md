@@ -51,7 +51,7 @@ The algorithm needs some information about the input data to correctly identify 
 | NEvents | positive integer | 23990 | The number of events in the signal (actually, a bit less. Used to identify pad with the signal)|
 | Cut | positive integer| 3800 | Satiration peak cut. ADC higher than cut is not processed. (better use default value)|
 | ifPlotPeaks | bool| false | Flag if each calibration peak with its fit will be plotted separately|
-| ext | string| pdf | Format of the produced plots|
+| ext | string| pdf | Format of the produced plots (does not work for final plots for now)|
 
 After setting all parameters to proper values, run the `run.sh` script.
 
